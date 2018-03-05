@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.18.0",
+=======
+    "eventful-node": "^1.1.1",
+>>>>>>> firebase-reac-setup
     "firebase": "^4.10.1",
+    "npm": "^5.7.1",
     "prop-types": "^15.6.1",
     "re-base": "^3.2.2",
     "react": "^16.2.0",

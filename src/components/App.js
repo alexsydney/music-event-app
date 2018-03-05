@@ -7,16 +7,18 @@ import SignUpPage from './SignUp';
 import SignInPage from './SignIn';
 import PasswordForgetPage from './PasswordForget';
 import HomePage from './Home';
+import SearchPage from './Search';
+import SearchResultsPage from './SearchResults';
 import AccountPage from './Account';
 
 import * as routes from '../constants/routes';
 
+import withAuthentication from './withAuthentication';
 
 const App = () =>
   <Router>
     <div>
       <Navigation />
-
       <hr/>
       <Route
         exact path={routes.LANDING}
@@ -42,8 +44,15 @@ const App = () =>
         exact path={routes.ACCOUNT}
         component={() => <AccountPage />}
       />
+      <Route
+        exact path={routes.SEARCH}
+        component={() => <SearchPage />}
+      />
+      <Route
+        exact path={routes.SEARCHRESULTS}
+        component={() => <SearchResultsPage />}
+      />
     </div>
-
   </Router>
 
-  export default App;
+export default withAuthentication(App);
