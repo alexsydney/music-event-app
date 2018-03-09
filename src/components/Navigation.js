@@ -6,31 +6,29 @@ import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
 
 const Navigation = (props, { authUser }) =>
-  <div>
+  <nav className='navigation'>
     { authUser
         ? <NavigationAuth />
         : <NavigationNonAuth />
     }
-  </div>
+  </nav>
 
-Navigation.contextTypes = {
-  authUser: PropTypes.object,
-};
+  Navigation.contextTypes = {
+    authUser: PropTypes.object,
+  };
 
 const NavigationAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.HOME}>Home</Link></li>
-    <li><Link to={routes.ACCOUNT}>Account</Link></li>
-    <li><SignOutButton /></li>
-  </ul>
+  <div className='muisc-navigation-auth-route-list'>
+    {/*   <p>You login as: { authUser.email}</p>  */}
+    <Link to={routes.HOME} className="music-navigation-auth-route-home">home</Link>
+    <Link to={routes.SEARCH} className="music-navigation-auth-route-search-eventful">search-eventful</Link>
+    <Link to={routes.ACCOUNT} className="music-navigation-auth-route-account">account</Link>
+    {/* <Link to={routes.SIGN_OUT}  className="music-navigation-auth-route-sign-out">sign-out</Link> */}
+  </div>
 
 const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.SEARCH}>Search</Link></li>
-    <li><Link to={routes.SEARCHRESULTS}>Search Results</Link></li>
-    <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-  </ul>
+  <div className='muisc-navigation-non-auth-route-list'>
+  {/* <Link to={routes.LANDING} className="music-navigation-non-auth-route-landing"></Link> */}
+  </div>
 
 export default Navigation;

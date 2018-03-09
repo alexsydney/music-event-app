@@ -1,18 +1,19 @@
 import axios from 'axios';
 
-const BASE_URL = "http://eventful.com/events";
-const API_KEY = "jTPzp9dWrzG33Mch";
+const BASE_URL = "https://us-central1-music-event-app.cloudfunctions.net/events?";
+
 
 
 const EventfulDB = {
 
-  getEventSearchResults( query ){
-    return axios.get(`${BASE_URL}/search/event?${API_KEY}&query=${ query }`);
+  getEventSearchResults( location, category ){
+    return axios.get(`${BASE_URL}&action=search&location=${ location }&category=${ category }&date=Future`);
   },
 
-  getEventDetails(id ){
-    return axios.get(`${BASE_URL}/movie/${ id }?${API_KEY}`);
+  getEventDetails( id ){
+    return axios.get(`${BASE_URL}action=details&id=${ id }`);
   }
+
 };
 
 export default EventfulDB;

@@ -1,28 +1,545 @@
-.App {
-  text-align: center;
+.page-container {
+  max-width: 980px;
+  margin: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body,
+a {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+header nav {
+  width: 100%;
+  min-height: 30px;
+
+  margin-top: 30px;
+  position: relative;
+  padding: 15px 0;
 }
 
-.App-intro {
-  font-size: large;
+header nav a {
+  height: 100%;
+  margin-left: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*   SignIn Page */
+
+.music-sign-in-container {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 80px;
+  padding-left: 40px;
+  padding-top: 40px;mu
+  margin-top: 50px;
+  width: 500px;
+  min-height: 200px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: inline-block;
+
+}
+.music-sign-in-container .music-sign-in-list-item
+.music-sign-in-title
+.music-sign-in-form {
+  width: 100%;
+  height: 200px;
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.music-sign-in-title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.music-sign-in-form
+.music-sign-in-email
+.music-sign-in-password
+.music-sign-in-button {
+
+  /* width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.music-sign-in-email .music-sign-in-password {
+  font-size: 20px;
+  height: 80px;
+}
+
+.music-sign-in-email {
+  width: 30%;
+  height: 20px;
+}
+
+/* MusicListing   */
+/* .music-listing-component ul {
+
+} */
+
+.music-listing-component ul .music-list-item {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  width: 250px;
+  min-height: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+}
+
+.music-listing-component ul .music-list-item .music-listing-img {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.music-list-item-content {
+  padding: 10px;
+}
+
+.music-list-item-cta {
+  width: 100%;
+  display: flex;
+}
+
+.music-list-item button {
+  width: 40%;
+  height: 50px;
+  color: white;
+  padding: 10px;
+  flex-grow: 1;
+  border: none;
+}
+
+.music-list-item button:hover {
+  cursor: pointer;
+}
+
+.music-listing-title {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* MusicDetails */
+
+.music-details {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  width: 70%;
+  min-height: 350px;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+.music-details .music-details-img {
+  width: 60%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.music-details-content {
+  padding: 30px 30px;
+  text-align: left;
+}
+
+.music-detail-name {
+  font-size: 30px;
+}
+
+.music-detail-date {
+  font-size: 15px;
+}
+
+.music-detail-place {
+  font-size: 15px;
+}
+
+/* home-events-listing */
+.home-events-listing{
+  font-size: 40px;
+  text-align: center;
+}
+
+/* music-landing-page */
+
+.music-landing-container {
+
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  width: 450px;
+  min-height: 200px;
+
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: inline-block;
+}
+
+.music-landing-container  .music-landing-welcome {
+
+  width: 100%;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.music-landing-sign-in-sign-up {
+  width: 100%;
+  display: flex;
+  margin-left: 120px;
+}
+
+.music-landing-sign-in {
+  height: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+
+  /* width: 100%; */
+  /* min-height: 30px;
+
+  margin-top: 30px; */
+  /* position: relative; */
+  /* padding: 15px 0; */
+}
+
+/* Search eventful  */
+.music-search-eventful-container {
+
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  width: 600px;
+  min-height: 100px;
+
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: inline-block;
+}
+
+.music-search-eventful-container .music-search-eventful-input .music-search-eventful-button {
+
+  width: 100%;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding-top: 50px;
+  margin-top: 100px; */
+}
+
+.music-search-eventful-input {
+  /* padding-left: 50px; */
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 70%;
+  font-size: 25px;
+}
+
+.music-search-eventful-button {
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 25%;
+  font-size: 25px;
+  border-radius: 5px;
+  /* background-color: rgb(218, 227, 171, 0.2); */
+  background-color: #DAE3AB;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* music-search-results page  */
+/*
+.music-search-results-container {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  width: 700px;
+  min-height: 700px;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+}
+*/
+
+/*
+.music-search-results-container .music-search-results-horizontal-line .music-search-results-event {
+
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+*/
+/*
+.music-search-results-horizontal-line {
+  width: 80%;
+  height: 100px;
+  font-size: 30px;
+}
+
+.music-search-results-event {
+  width: 80%;
+  height: 300px;
+}
+
+*/
+
+/* music-event-details page  */
+.music-event-details-container {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  width: 700px;
+  min-height: 700px;
+
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: inline-block;
+}
+
+.music-event-details-container .music-event-details-img
+.music-event-details-list-item {
+
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.music-event-details-img {
+  width: 80%;
+  height: 40%;
+  padding-left: 280px;
+}
+
+.music-event-details-list-item .music-event-details-title .music-event-details-date .music-event-details-price .music-event-details-venue-name .muisc-event-details-address .music-event-details-city .music-event-details-country .music-event-details-description
+.music-event-details-venue-url {
+  width:100%;
+
+}
+
+.music-event-details-title {
+  font-size: 30px;
+  text-align: center;
+}
+.music-event-details-date {
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.music-event-details-price {
+  font-size: 20px;
+  text-align: center;
+}
+
+.music-event-details-venue-name {
+  font-size: 25px;
+  text-align: center;
+}
+
+.music-event-details-address {
+  font-size: 20px;
+  margin-left: 35px;
+  padding-left: 35px;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  text-align: center;
+}
+
+.music-event-details-city {
+  font-size: 20px;
+  margin-left: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
+.music-event-details-country  {
+  font-size: 15px;
+  margin-left: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
+.music-event-details-description {
+  font-size: 17px;
+  margin-left: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
+
+.music-event-details-venue-url {
+  font-size: 25px;
+  text-align: center;
+  /* margin-left: 30px; */
+  /* padding-left: 25px; */
+}
+
+.add-item,
+.update-band-form {
+  position: fixed;
+  z-index: 99;
+  width: 40%;
+  min-height: 300px;
+  left: 30%;
+  top: 10%;
+  padding: 20px;
+  font-size: 18px;
+  background-color: rgba(155, 89, 182, 0.8);
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+
+.add-item input,
+.update-band-form input {
+  background-color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  display: block;
+  width: 100%;
+  height: 30px;
+  color: black;
+  font-size: 26px;
+}
+
+.add-item button,
+.update-band-form button {
+  text-decoration: none;
+  background-color: lime;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  font-size: 26px;
+}
+
+.add-item h2,
+.update-band-form h2 {
+  font-size: 22px;
+}
+
+.view-details-button {
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4568dc, #b06ab3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+
+  height: 50px;
+  position: relative;
+}
+
+.view-details-button a {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 18px;
+  z-index: 1;
+}
+
+.button-one-style {
+  background-color: #2ecc71;
+  z-index: 2;
+}
+
+.button-two-style {
+  background-color: #e74c3c;
+  z-index: 2;
+}
+
+.add-band-button {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #2ecc71;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+button {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  z-index: 20;
+}
+
+/*  Navigation page */
+.muisc-navigation-auth-route-list {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.music-navigation-auth-route-home {
+  background-color: #2ecc71;
+
+}
+
+.music-navigation-auth-route-search-eventful {
+  background-color: #2ecc71;
+
+}
+
+.music-navigation-auth-route-account {
+  background-color: #2ecc71;
+
+}
+
+.music-navigation-auth-route-sign-out{
+  background-color: #2ecc71;
+
+}
+
+.muisc-navigation-non-auth-route-list {
+
+}
+
+.music-navigation-non-auth-route-landing {
+
+}
+
+.event-thumbnail {
+  cursor: pointer;
 }

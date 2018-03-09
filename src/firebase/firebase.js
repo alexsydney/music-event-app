@@ -1,5 +1,6 @@
 
 import * as firebase from 'firebase';
+import Rebase from 're-base';
 
 const config = {
   apiKey: "AIzaSyCiSjG4SCjPyLS4cimpJZih-Jasb0OnSxI",
@@ -10,12 +11,16 @@ const config = {
   messagingSenderId: "100344553688",
 };
 
+let app;
 if (!firebase.apps.length) {
-   firebase.initializeApp(config);
+  app = firebase.initializeApp(config);
+
+  var base = Rebase.createClass(app.database());
 }
 
 const auth = firebase.auth();
 
 export {
   auth,
+  base,
 };

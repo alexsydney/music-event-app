@@ -7,7 +7,7 @@ import PasswordChangeForm from './PasswordChange';
 
 const AccountPage = (props, { authUser }) =>
   <div>
-    <h1>Account: { authUser.email}</h1>
+    <h1>Account:{ authUser.email}</h1>
     <PasswordForgetForm />
     <PasswordChangeForm />
   </div>

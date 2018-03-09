@@ -19,7 +19,7 @@ export default class Search extends Component {
     e.preventDefault();
     console.log('submmit');
 
-    this.props.history.push(`/search/${ this.state.query }`);
+    this.props.history.push(`/search/${ this.state.query }/music`);
 
   }
 
@@ -30,11 +30,10 @@ export default class Search extends Component {
    render() {
 
      return (
-       <div>
-        <p> You Search: { this.state.query }</p>
+       <div className='music-search-eventful-container'>
         <form onSubmit={ this.handleSubmit }>
-          <input type="search" onChange={ this.handleChange } />
-          <button>Search</button>
+          <input type="search" name="search" onChange={ this.handleChange } placeholder="Enter city to search for event." className="music-search-eventful-input"/>
+          <button className="music-search-eventful-button">Search</button>
         </form>
         <br/>
        </div>

@@ -1,23 +1,29 @@
 {
   "name": "music-event-app",
+  "homepage": "http://alexsydney.github.io/music-event-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.18.0",
-=======
     "eventful-node": "^1.1.1",
->>>>>>> firebase-reac-setup
+    "express": "^4.16.2",
     "firebase": "^4.10.1",
+    "gh-pages": "^1.1.0",
+    "moment": "^2.21.0",
     "npm": "^5.7.1",
     "prop-types": "^15.6.1",
     "re-base": "^3.2.2",
     "react": "^16.2.0",
+    "react-datetime": "^2.14.0",
     "react-dom": "^16.2.0",
+    "react-new-window": "0.0.4",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "socket.io": "^2.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

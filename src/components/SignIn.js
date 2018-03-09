@@ -8,11 +8,13 @@ import { auth } from '../firebase';
 import * as routes from '../constants/routes';
 
 const SignInPage = ({ history }) =>
-  <div>
-    <h1>SignIn</h1>
-    <SignInForm history={ history } />
-    <PasswordForgetLink />
-    <SignUpLink />
+  <div className='music-sign-in-container'>
+    <div className='music-sign-in-list-item'>
+        <h2 className="music-sign-in-title">Sign-In</h2>
+        <SignInForm history={ history } />
+        <PasswordForgetLink />
+        <SignUpLink />
+    </div>
   </div>
 
 
@@ -68,25 +70,28 @@ class SignInForm extends Component {
       email === '';
 
     return(
-      <form onSubmit={ this.onSubmit }>
-        <input
-          value={email}
-          onChange={ event => this.setState(byPropKey('email', event.target.value ))}
-          type="text"
-          placeholer="Email Address"
-        />
-        <input
-          value={password}
-          onChange={ event => this.setState(byPropKey('password', event.target.value))}
-          type="password"
-          placeholer="Password"
-        />
-        <button disable={isInvalid} type="submit">
-          Sign In
-        </button>
+      <div className="music-sign-in-form">
+        <form onSubmit={ this.onSubmit }>
+          <input
+            value={email}
+            onChange={ event => this.setState(byPropKey('email', event.target.value ))}
+            type="text"
+            placeholer="Email Address"
+           className="music-sign-in-email"/>
+          <input
+            value={password}
+            onChange={ event => this.setState(byPropKey('password', event.target.value))}
+            type="password"
+            placeholer="Password"
+            className="music-sign-in-password"
+          />
+          <button disable={isInvalid} type="submit" className="music-sign-in-button">
+            Sign In
+          </button>
 
-        { error && <p>{error.message}</p> }
-      </form>
+          { error && <p>{error.message}</p> }
+        </form>
+      </div>
     );
   }
 
