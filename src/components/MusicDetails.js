@@ -14,8 +14,8 @@ export default class MusicDetails extends React.Component {
   }
 
   componentWillMount() {
-    let querystring = window.location.search.substring(4);
-    const id = parseInt(querystring);
+    // let querystring = //window.location.search.substring(4);
+    const id = parseInt(this.props.match.params.id);
 
     this.getBandDetails(id);
   }

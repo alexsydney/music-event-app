@@ -154,7 +154,7 @@ export default class MusicListing extends React.Component {
         <div className="music-list-item-content" >
           <h2 className="music-listing-title">{ item.name }</h2>
           <div className="view-details-button">
-            <Link to={`${routes.MUSIC_DETAILS}?id=${item.id}`}>View Details</Link>
+            <Link to={`/band/${item.id}`}>View Details</Link>
 
           </div>
 
