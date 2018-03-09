@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, } from 'react-router-dom';
+import { HashRouter as Router, Route, } from 'react-router-dom';
 
 import  './App.css';
 
@@ -36,7 +36,7 @@ const App = () =>
         <Route exact path={routes.SEARCH} component={ SearchPage } />
         <Route path={routes.SEARCH_RESULTS} component={ SearchResultsPage } />
         <Route exact path={routes.EVENT} component={ EventPage } />
-      
+
         <Route exact path={routes.MUSIC_DETAILS} component={ MusicDetails } />
       </main>
 
