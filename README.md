@@ -13,5 +13,9 @@ React, Google Cloud firebase, rebase, Node.js, API, axios, HTML5, CSS3
 
 <h2>Dependencies(Included)</h2>
 <a target="_blank" href="http://sydney.eventful.com/events">Eventful for live events</a>
+
+<h2>Wireframe </h2>
+<a target="_blank" href="https://wkbueg.axshare.com/#g=1&p=landing">music-event-app wireframe</a>
+
 <h2>Creator</h2>
 Alex Pham
